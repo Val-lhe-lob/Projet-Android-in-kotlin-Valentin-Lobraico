@@ -19,7 +19,6 @@ class BookAdapter(private val onBookClickListener: OnBookClickListener) : Recycl
 
     fun addBooks(newBooks: List<Book>) {
         books.addAll(newBooks)
-        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookViewHolder {
